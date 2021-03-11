@@ -21,13 +21,17 @@ app.use(cors());
 // Static directory
 app.use(express.static("public"));
 /////////////////////////////////
+let adminroutes = require("./routes/admin-routes.js")
+let cartroutes = require("./routes/cart-routes.js")
+let customerroutes = require("./routes/customer-routes.js")
+let productroutes = require("./routes/product-routes.js")
 
 // Routes
 // =============================================================
-require("./routes/admin-routes.js")(app);
-require("./routes/cart-routes.js")(app);
-require("./routes/customer-routes.js")(app);
-require("./routes/product-routes.js")(app);
+// (app).use(adminroutes)
+// (app).use(cartroutes)
+// (app).use(customerroutes)
+// (app).use(productroutes)
 
 
 // Syncing our sequelize models and then starting our Express app

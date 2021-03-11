@@ -48,8 +48,8 @@ module.exports = function (sequelize, DataTypes) {
   
       shipping: { type: DataTypes.STRING },
     });
-    Product.associate = function (models) {
-      Product.belongsTo(models.Admin);
-    };
+    
+   
+    
     return Products;
   };
