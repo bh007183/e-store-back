@@ -4,6 +4,7 @@ const app = express();
 const cors = require("cors");
 const db = require("./models");
 // Sets up the Express App
+require("dotenv").config()
 
 var PORT = process.env.PORT || 8080;
 
@@ -19,19 +20,19 @@ app.use(express.json());
 // corsOptions
 app.use(cors());
 // Static directory
-app.use(express.static("public"));
+// app.use(express.static("public"));
 /////////////////////////////////
-let adminroutes = require("./routes/admin-routes.js")
+const adminroutes = require("./routes/admin-routes.js")
 let cartroutes = require("./routes/cart-routes.js")
 let customerroutes = require("./routes/customer-routes.js")
 let productroutes = require("./routes/product-routes.js")
 
 // Routes
 // =============================================================
-// (app).use(adminroutes)
-// (app).use(cartroutes)
-// (app).use(customerroutes)
-// (app).use(productroutes)
+app.use(adminroutes)
+// app.use(cartroutes)
+// app.use(customerroutes)
+// app.use(productroutes)
 
 
 // Syncing our sequelize models and then starting our Express app

@@ -15,9 +15,9 @@ router.post("/api/Admin/Create", async (req,res) => {
         username: req.body.username,
         password: hashedPassword,
         email: req.body.email,
-    }).catch(err => res.json(err))
+    }).then(res.json("Admin account created").end()).catch(err => res.json(err))
 
-    res.json("Admin account created")
+    
 })
 
 
@@ -54,3 +54,5 @@ router.post("/api/AdminLogin", async (req, res) => {
         res.json("Password or Username did not match")
     }
 })
+
+module.exports = router
