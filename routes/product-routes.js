@@ -12,4 +12,14 @@ router.get("/api/products/:category", async (req, res) =>{
     
 })
 
+router.get("/api/products/subCat/:category", async (req, res) =>{
+    let data = await db.Products.findAll({
+        where: {
+            subCategory: req.params.category
+        }
+    }).catch(err => res.status(500))
+    res.json(data)
+    
+})
+
 module.exports = router
