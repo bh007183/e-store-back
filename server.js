@@ -23,16 +23,16 @@ app.use(cors());
 // app.use(express.static("public"));
 /////////////////////////////////
 const adminroutes = require("./routes/admin-routes.js")
-let cartroutes = require("./routes/cart-routes.js")
-let customerroutes = require("./routes/customer-routes.js")
-let productroutes = require("./routes/product-routes.js")
+const cartroutes = require("./routes/cart-routes.js")
+const customerroutes = require("./routes/customer-routes.js")
+const productroutes = require("./routes/product-routes.js")
 
 // Routes
 // =============================================================
 app.use(adminroutes)
 // app.use(cartroutes)
 // app.use(customerroutes)
-// app.use(productroutes)
+app.use(productroutes)
 
 
 // Syncing our sequelize models and then starting our Express app

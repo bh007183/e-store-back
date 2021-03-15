@@ -1,0 +1,15 @@
+
+const router = require("express").Router();
+const db = require("../models");
+
+router.get("/api/products/:category", async (req, res) =>{
+    let data = await db.Products.findAll({
+        where: {
+            category: req.params.category
+        }
+    }).catch(err => res.status(500))
+    res.json(data)
+    
+})
+
+module.exports = router

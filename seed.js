@@ -37,6 +37,46 @@ let products = [
         shipping: "Shipping not included",
         InventoryItem: true,
       },
+      {
+        title: `Turbo Levo SL Comp Carbon`,
+        image:
+          "https://www.bikesonline.com/assets/full/7541222.jpg?20201115174829",
+        description: `
+        The Turbo Levo SL looks like a Stumpjumper and, out on the trail, feels like one too. That’s no mistake. We aimed to build a Stumpjumper with a bit more boost to it and that’s exactly what you get—a Sidearm chassis with just the right amount of front-to-rear stiffness and 150mm of smooth, custom-tuned FOX rear suspension. To top it all off, we constructed this Turbo Levo SL chassis entirely from our light-yet-strong FACT 11m carbon.
+The lightweight SL 1.1 motor doubles your effort with as much as 240 watts of silent and powerful assistance to your pedals. The motor’s responsive torque curve delivers power perfectly in-tune with your normal riding cadence and leaves no resistance when you’re riding without power assistance.
+Worried about running out of power? No problem. Turbo Levo SL eats up big miles and long days. And if you’re looking for even more miles, our optional range extender boosts your range by another 50 percent. On top of all that, our Mission Control App can handle battery management automatically, ensuring your battery will last as long as you need it to.
+Assist up to 20 mph / 25 km/h`,
+        category: "Bikes",
+        subCategory: "CrossCountry",
+        price: 8000,
+        quantity: 50,
+        tier: "two",
+        featured: true,
+        updatedBy: "KEVIN L",
+        tax: "Taxes not included",
+        shipping: "Shipping not included",
+        InventoryItem: true,
+      },
+      {
+        title: `Zero Gravity Aluminium`,
+        image:
+          "https://www.bikesonline.com/assets/alt_1/7541222.jpg?20210204201543",
+        description: `
+        The Turbo Levo SL looks like a Stumpjumper and, out on the trail, feels like one too. That’s no mistake. We aimed to build a Stumpjumper with a bit more boost to it and that’s exactly what you get—a Sidearm chassis with just the right amount of front-to-rear stiffness and 150mm of smooth, custom-tuned FOX rear suspension. To top it all off, we constructed this Turbo Levo SL chassis entirely from our light-yet-strong FACT 11m carbon.
+The lightweight SL 1.1 motor doubles your effort with as much as 240 watts of silent and powerful assistance to your pedals. The motor’s responsive torque curve delivers power perfectly in-tune with your normal riding cadence and leaves no resistance when you’re riding without power assistance.
+Worried about running out of power? No problem. Turbo Levo SL eats up big miles and long days. And if you’re looking for even more miles, our optional range extender boosts your range by another 50 percent. On top of all that, our Mission Control App can handle battery management automatically, ensuring your battery will last as long as you need it to.
+Assist up to 20 mph / 25 km/h`,
+        category: "Bikes",
+        subCategory: "Downhill",
+        price: 3333.89,
+        quantity: 50,
+        tier: "two",
+        featured: true,
+        updatedBy: "KEVIN L",
+        tax: "Taxes not included",
+        shipping: "Shipping not included",
+        InventoryItem: true,
+      },
       
     
 
