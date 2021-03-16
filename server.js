@@ -30,7 +30,7 @@ const productroutes = require("./routes/product-routes.js")
 // Routes
 // =============================================================
 app.use(adminroutes)
-// app.use(cartroutes)
+app.use(cartroutes)
 // app.use(customerroutes)
 app.use(productroutes)
 

@@ -31,4 +31,14 @@ router.get("/api/featured", async (req, res) =>{
     
 })
 
+router.get("/api/products/item/:id", async (req, res) =>{
+    let data = await db.Products.findOne({
+        where: {
+            id: req.params.id
+        }
+    }).catch(err => res.status(500))
+    res.json(data)
+    
+})
+
 module.exports = router
