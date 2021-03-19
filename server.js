@@ -14,17 +14,17 @@ var PORT = process.env.PORT || 8080;
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-// var corsOptions = {
-//   origin: 'https://l-z-mount-bjh.herokuapp.com'
-// }
+var corsOptions = {
+  origin: 'https://bj-outdoor-estore.herokuapp.com/'
+}
 // corsOptions
-app.use(cors());
+app.use(cors(corsOptions));
 // Static directory
-// app.use(express.static("public"));
+app.use(express.static("public"));
 /////////////////////////////////
 const adminroutes = require("./routes/admin-routes.js")
 const cartroutes = require("./routes/cart-routes.js")
-const customerroutes = require("./routes/customer-routes.js")
+// const customerroutes = require("./routes/customer-routes.js")
 const productroutes = require("./routes/product-routes.js")
 
 // Routes
