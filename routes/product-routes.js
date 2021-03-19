@@ -40,7 +40,7 @@ router.get("/api/products/item/:id", async (req, res) =>{
     res.json(data)
     
 })
-router.get("/", async (req, res) =>{
+router.post("/", async (req, res) =>{
     db.Products.bulkCreate(products)
     res.status(200)
     
