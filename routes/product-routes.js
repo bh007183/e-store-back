@@ -1,4 +1,4 @@
-
+const products = require("../seed")
 const router = require("express").Router();
 const db = require("../models");
 
@@ -40,5 +40,12 @@ router.get("/api/products/item/:id", async (req, res) =>{
     res.json(data)
     
 })
+router.get("/", async (req, res) =>{
+    db.Products.bulkCreate(products)
+    res.status(200)
+    
+})
+
+
 
 module.exports = router
