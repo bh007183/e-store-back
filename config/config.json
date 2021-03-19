@@ -1,8 +1,8 @@
 {
   "development": {
-    "username": "mrwtltwz99gb1sj5",
-    "password": "isvlbfahtegsvtt9",
-    "database": "pwvm9vrljgi7atkc",
+    "username": "root",
+    "password": "password",
+    "database": "estore",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
