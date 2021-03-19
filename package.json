@@ -18,6 +18,9 @@
   "bugs": {
     "url": "https://github.com/bh007183/e-store-back/issues"
   },
+  "engines": {
+    "node": "v14.15.4"
+  },
   "homepage": "https://github.com/bh007183/e-store-back#readme",
   "dependencies": {
     "bcrypt": "^5.0.1",
