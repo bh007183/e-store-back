@@ -15,7 +15,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 var corsOptions = {
-  origin: 'https://bj-outdoor-estore.herokuapp.com'
+  origin: 'https://bjh-hop-estore.herokuapp.com/'
 }
 // corsOptions
 app.use(cors(corsOptions));
