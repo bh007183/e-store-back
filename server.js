@@ -8,7 +8,6 @@ require("dotenv").config()
 
 var PORT = process.env.PORT || 8080;
 
-// Requiring our models for syncing
 
 // Sets up the Express app to handle data parsing
 app.use(express.urlencoded({ extended: true }));
@@ -31,7 +30,6 @@ const productroutes = require("./routes/product-routes.js")
 // =============================================================
 app.use(adminroutes)
 app.use(cartroutes)
-// app.use(customerroutes)
 app.use(productroutes)
 
 
